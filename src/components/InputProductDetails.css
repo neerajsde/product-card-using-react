@@ -1,0 +1,134 @@
+form{
+    width: 40%;
+    height: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 1.5rem;
+    padding: 2rem 4rem;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.field{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.item-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input{
+    width: 250px;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    background-color: rgba(244, 248, 248, 0.628);
+    border-radius: 5px;
+    border: 1.5px solid black;
+    outline: 1px solid black;
+}
+input:focus{
+    border: 1.5px solid green;
+    outline: 1px solid green;
+    transition: 0.5s ease;
+}
+
+
+.item-desc label{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(244, 248, 248, 0.628);
+    border-radius: 5px;
+    border: 1.5px solid black;
+    outline: 1px solid black;
+}
+textarea:focus{
+    border: 1.5px solid green;
+    outline: 1px solid green;
+    transition: 0.5s ease;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    border: 1.5px solid black;
+    background-color: blueviolet;
+    color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkviolet;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+    form{
+        width: 45%;
+        height: 450px;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .field{
+        font-size: 1.5rem;
+    }
+    .item-desc{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    input{
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    form{
+        width: 90%;
+        height: 400px;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    h1{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    .field{
+        font-size: 1.5rem;
+    }
+    .item-desc{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    input{
+        width: 200px;
+        font-size: 1rem;
+    }
+}

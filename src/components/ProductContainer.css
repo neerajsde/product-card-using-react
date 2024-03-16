@@ -1,0 +1,52 @@
+.box {
+    width: 40%;
+    height: 500px;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: auto;
+    gap: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+}
+
+/* Customize the scrollbar for WebKit browsers */
+.box::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px; /* Update border-radius here */
+}
+
+/* Customize the thumb of the scrollbar */
+.box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Customize the track of the scrollbar */
+.box::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 1000px){
+    .box{
+        width: 45%;
+        height: 450px;
+        border-radius: 8px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .box{
+        width: 90%;
+        height: 400px;
+        border-radius: 5px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
